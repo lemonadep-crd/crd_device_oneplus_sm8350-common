@@ -7,9 +7,6 @@ $(call soong_config_set,libcameraservice,ext_lib,//$(LOCAL_PATH):libcameraservic
 # OnePlus OOS Camera
 $(call inherit-product-if-exists, vendor/oplus/camera/opluscamera.mk)
 
-# Dolby 
-$(call inherit-product, vendor/sony/dolby/sonydolby.mk)
-
 # System properties
 PRODUCT_SYSTEM_PROPERTIES += \
     pm.sleep_mode=1 \
